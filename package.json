@@ -45,7 +45,7 @@
     "build": "vite build",
     "build:lib": "vite build --config vite.lib.config.js",
     "generate": "node scripts/generate-icons.js",
-    "prepublishOnly": "npm run generate && npm run build:lib",
+    "prepublishOnly": "npm run build:lib",
     "lint": "eslint .",
     "preview": "vite preview"
   },
