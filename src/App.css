@@ -40,7 +40,7 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) rgba(255, 255, 255, 0.1);
-
+  
 }
 
 .app {
@@ -485,14 +485,7 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   animation: slideUp 0.3s;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
 }
-
-.modal-card::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
 
 @keyframes slideUp {
   from {
