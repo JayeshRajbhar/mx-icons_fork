@@ -449,13 +449,13 @@ function App() {
                 >
                   {copiedIcon === "code" ? (
                     <>
-                      <TickCircleLinear size={16} color="#000000" />
-                      <span style={{ color: '#000000' }}>Copied!</span>
+                      <TickCircleLinear size={16} color={isDarkMode ? "#ffffff" : "#000000"} />
+                      <span style={{ color: isDarkMode ? '#ffffff' : '#000000' }}>Copied!</span>
                     </>
                   ) : (
                     <>
-                      <CopyLinear size={16} color="#000000" />
-                      <span style={{ color: '#000000' }}>
+                      <CopyLinear size={16} color={isDarkMode ? "#ffffff" : "#000000"} />
+                      <span style={{ color: isDarkMode ? '#ffffff' : '#000000' }}>
                         Copy Code
                       </span>
                     </>
