@@ -16,7 +16,14 @@ function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
-    return saved ? JSON.parse(saved) : false;
+
+    if(saved !== null){  
+      return JSON.parse(saved);
+    }
+
+    //match system preference from window properties
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
   });
   const iconsPerPage = 100;
 
