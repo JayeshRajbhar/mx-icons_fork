@@ -13,6 +13,7 @@ export default function NotionMini({
       color={color}
       fill="currentColor"
       className={className}
+      viewBox="0 0 16 16"
       {...props}
     >
       <path
