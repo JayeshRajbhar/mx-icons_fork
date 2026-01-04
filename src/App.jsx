@@ -17,15 +17,18 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
 
-    if(saved !== null){  
+    if (saved !== null) {
       return JSON.parse(saved);
     }
 
     //match system preference from window properties
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-
+    return (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
   });
   const iconsPerPage = 100;
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     fetch("https://registry.npmjs.org/mx-icons")
@@ -597,7 +600,7 @@ function App() {
 
           <div className="footer-bottom">
             <p className="footer-copyright">
-              © 2025 MX Icons. Released under the MIT License.
+              © {currentYear} MX Icons. Released under the MIT License.
             </p>
             <div className="footer-social">
               <a
