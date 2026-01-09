@@ -28,6 +28,7 @@ function App() {
     );
   });
   const iconsPerPage = 100;
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     fetch("https://registry.npmjs.org/mx-icons")
@@ -528,14 +529,7 @@ function App() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/ig-imanish/mx-icons#-quick-start" target="_blank" rel="noopener noreferrer">
-                      Quick Start
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/ig-imanish/mx-icons" target="_blank" rel="noopener noreferrer">
-                      GitHub  
-                    </a>
+                    <a href="https://github.com/ig-imanish/mx-icons">GitHub</a>
                   </li>
                   <li>
                     <a href="https://github.com/ig-imanish/mx-icons/releases" target="_blank" rel="noopener noreferrer">
@@ -584,16 +578,6 @@ function App() {
                       NPM Package
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      Donate
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/ig-imanish/mx-icons/releases" target="_blank" rel="noopener noreferrer">
-                      Changelog
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -601,8 +585,7 @@ function App() {
 
           <div className="footer-bottom">
             <p className="footer-copyright">
-              © {new Date().getFullYear()} MX Icons. Released under the MIT
-              License.
+              © {currentYear} MX Icons. Released under the MIT License.
             </p>
             <div className="footer-social">
               <a
